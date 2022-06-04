@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>Data for %code%</h1>
+    %data%
+    <script>
+        const textData = document.getElementById('textData');
+        const copy = document.getElementById('copyButton');
+        if (textData && copy) {
+            copy.addEventListener('click', () => {
+                navigator.clipboard.writeText(textData.innerText);
+            });
+        }
+    </script>
+    <noscript>
+        <style>
+            #copyButton {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+
+</html>
