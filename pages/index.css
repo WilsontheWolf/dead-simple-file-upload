@@ -1,0 +1,38 @@
+html {
+    background-color: #191919;
+    color: #fafafa;
+}
+
+a {
+    color: #00a2e7;
+}
+
+textarea,
+input::file-selector-button,
+input[type="submit"],
+button {
+    background: #1e1e1e;
+    color: #fafafa;
+    border-color: #555;
+    border-radius: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #fafafa;
+        color: #191919;
+    }
+
+    a {
+        color: #07a;
+    }
+
+        textarea,
+        input::file-selector-button,
+        input[type="submit"],
+        button {
+            background: #fafafa;
+            color: #1e1e1e;
+            border-color: #ccc;
+        }
+}
